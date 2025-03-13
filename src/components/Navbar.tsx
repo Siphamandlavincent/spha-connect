@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import SPHALogo from '@/assets/spha-apps-logo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +15,11 @@ const Navbar = () => {
     <nav className="bg-white py-4 px-6 md:px-12 lg:px-20 shadow-sm">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
-          <img src={SPHALogo} alt="SPHA Solutions Logo" className="h-10 w-10 mr-2" />
+          <img 
+            src="https://i.postimg.cc/3NrMbdj9/Spha-Apps-Logo.png" 
+            alt="SPHA Solutions Logo" 
+            className="h-10 w-10 mr-2 rounded-full" 
+          />
           <span className="text-lg font-semibold">SPHA Solutions</span>
         </div>
         

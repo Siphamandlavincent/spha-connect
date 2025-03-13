@@ -1,7 +1,7 @@
+
 import { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import SPHALogo from '@/assets/spha-apps-logo.svg';
 
 const ContactForm = () => {
   const location = useLocation();
@@ -82,7 +82,11 @@ const ContactForm = () => {
       <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
         <div className="text-center mb-8">
           <div className="inline-block rounded-full bg-white p-2 mb-4">
-            <img src={SPHALogo} alt="SPHA Apps Logo" className="h-20 w-20" />
+            <img 
+              src="https://i.postimg.cc/3NrMbdj9/Spha-Apps-Logo.png" 
+              alt="SPHA Apps Logo" 
+              className="h-20 w-20 rounded-full" 
+            />
           </div>
           <h2 className="text-2xl font-bold">Contact Us</h2>
         </div>
