@@ -143,7 +143,7 @@ const Contact = () => {
             
             <div className="rounded-lg overflow-hidden h-64">
               <img 
-                src="https://maps.googleapis.com/maps/api/staticmap?center=Utrecht,South+Africa&zoom=13&size=600x300&maptype=roadmap&markers=color:red%7CUtrecht,South+Africa&key=YOUR_API_KEY" 
+                src="https://i.postimg.cc/g0shR705/ed4a58db-7fa9-4efc-abcf-a9cc8a4cfd85.png" 
                 alt="Map of Utrecht, South Africa" 
                 className="w-full h-full object-cover"
               />
