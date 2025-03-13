@@ -87,6 +87,14 @@ const Contact = () => {
               
               <h4 className="font-semibold mt-3 mb-1 text-primary">Community Programs:</h4>
               <p>Saturdays: 9:00 AM - 2:00 PM</p>
+              
+              <div className="mt-4 rounded-lg overflow-hidden">
+                <img 
+                  src="https://i.postimg.cc/02SJZjQ7/AI-IMAGE.webp" 
+                  alt="SPHA Solutions AI" 
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
             </div>
           </div>
           
