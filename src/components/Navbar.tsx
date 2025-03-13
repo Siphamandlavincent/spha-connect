@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import SPHALogo from '@/assets/spha-logo.svg';
+import SPHALogo from '@/assets/spha-apps-logo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,9 @@ const Navbar = () => {
           <Link to="/services" className="text-gray-700 hover:text-primary">Services</Link>
           <Link to="/about" className="text-gray-700 hover:text-primary">About</Link>
           <Link to="/contact" className="text-gray-700 hover:text-primary">Contact</Link>
-          <Button className="bg-primary hover:bg-primary/90 text-white">Get Help</Button>
+          <Button asChild className="bg-primary hover:bg-primary/90 text-white">
+            <Link to="/contact-form">Get Help</Link>
+          </Button>
         </div>
         
         {/* Mobile Menu Button */}
@@ -42,7 +44,9 @@ const Navbar = () => {
           <Link to="/services" className="text-gray-700 hover:text-primary py-2 px-4">Services</Link>
           <Link to="/about" className="text-gray-700 hover:text-primary py-2 px-4">About</Link>
           <Link to="/contact" className="text-gray-700 hover:text-primary py-2 px-4">Contact</Link>
-          <Button className="bg-primary hover:bg-primary/90 text-white w-full">Get Help</Button>
+          <Button asChild className="bg-primary hover:bg-primary/90 text-white w-full">
+            <Link to="/contact-form">Get Help</Link>
+          </Button>
         </div>
       )}
     </nav>

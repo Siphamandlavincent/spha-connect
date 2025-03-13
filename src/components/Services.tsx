@@ -1,5 +1,6 @@
 
 import { Monitor, Laptop, Smartphone, Shield, Database, Code } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface ServiceCardProps {
   title: string;
@@ -8,11 +9,13 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ title, description, icon }: ServiceCardProps) => (
-  <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-    <div className="text-primary mb-4">{icon}</div>
-    <h3 className="text-lg font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
-  </div>
+  <Link to={`/contact-form?service=${encodeURIComponent(title)}`} className="block">
+    <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer">
+      <div className="text-primary mb-4">{icon}</div>
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <p className="text-gray-600">{description}</p>
+    </div>
+  </Link>
 );
 
 const Services = () => {

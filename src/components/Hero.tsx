@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -11,8 +12,8 @@ const Hero = () => {
         <p className="text-white text-lg mb-8">
           Professional PC, Phone, and Laptop Repair Services
         </p>
-        <Button className="bg-white text-primary hover:bg-gray-100 font-medium px-8 py-6 rounded-full text-base">
-          Get Started
+        <Button asChild className="bg-white text-primary hover:bg-gray-100 font-medium px-8 py-6 rounded-full text-base">
+          <Link to="/contact-form">Get Started</Link>
         </Button>
       </div>
     </section>
